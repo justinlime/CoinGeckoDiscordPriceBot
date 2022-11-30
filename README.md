@@ -2,7 +2,7 @@
 
 Very simple price bot for coins listed on coingecko. Just edit the info.json to your own custom values depending on the coin, then run the main.py script.
 
-### Requirements
+## Requirements
 
 Use "pip install -r requirements.txt" to install needed packages
 
@@ -25,10 +25,12 @@ Coin ID's can be found at: https://docs.google.com/spreadsheets/d/1wTTuxXt8n9q7C
 
 CoinGecko has a limit for the free API of 10-50 calls per minute, plan accordingly when setting the updatefreq
 
-Currently I am hosting two instances for FUND and xFUND if you would like to add them to your sever:
+### Currently I am hosting two instances for FUND and xFUND if you would like to add them to your sever:
 
 FUND:
+
 https://discord.com/api/oauth2/authorize?client_id=1047325323055878145&permissions=0&scope=bot
 
 xFUND:
+
 https://discord.com/api/oauth2/authorize?client_id=1047329418936332339&permissions=0&scope=bot
