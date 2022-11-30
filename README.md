@@ -4,7 +4,7 @@ Very simple price bot for coins listed on coingecko. Just edit the info.json to 
 
 ### Requirements
 
-Use pip install -r requirements.txt to install needed packages
+Use "pip install -r requirements.txt" to install needed packages
 
 ### info.json
 {   
