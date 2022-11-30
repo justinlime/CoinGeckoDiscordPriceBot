@@ -25,7 +25,7 @@ Coin ID's can be found at: https://docs.google.com/spreadsheets/d/1wTTuxXt8n9q7C
 
 CoinGecko has a limit for the free API of 10-50 calls per minute, plan accordingly when setting the updatefreq
 
-### Currently I am hosting two instances for FUND and xFUND if you would like to add them to your sever:
+### Currently I am hosting two instances for the cryptos FUND and xFUND if you would like to add them to your sever:
 
 FUND:
 
