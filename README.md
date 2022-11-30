@@ -9,7 +9,7 @@ Use "pip install -r requirements.txt" to install needed packages
 ### info.json
 {   
 
-    "api":"[DISCORD-API-KEY-HERE]",
+    "api":"[DISCORD-API-KEY]",
     
     "coin":"[NAME-OF-COIN]",
     
