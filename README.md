@@ -1,6 +1,6 @@
 # CoinGeckoDiscordPriceBot
 
-Very simple price bot for coins listed on coingecko. Just edit the info.json to your own custom values depending on the coin, then run the main.py script.
+Very simple price bot for coins listed on coingecko. Just edit the info.json to your own custom values depending on the coin, then run the main.py script. Bot needs no permissions.
 
 ## Requirements
 
