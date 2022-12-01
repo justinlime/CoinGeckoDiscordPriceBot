@@ -15,7 +15,6 @@ Use `pip install -r requirements.txt` to install needed packages
 ```json
 {   
     "api":"[DISCORD-API-KEY]",
-    "coin":"[NAME-OF-COIN]",
     "id":"[ID-OF-COIN]",
     "length":[MAX-CHARACTERS-OF-PRICE],
     "updatefreq":[UPDATE-FREQUENCY-IN-SECONDS] 
