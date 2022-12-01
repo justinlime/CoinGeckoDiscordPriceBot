@@ -31,4 +31,4 @@ Use `pip install -r requirements.txt` to install needed packages
 
 [xFUND](https://discord.com/api/oauth2/authorize?client_id=1047329418936332339&permissions=0&scope=bot)
 
-![image](https://imgur.com/xi67QJl.png)
+![image](https://imgur.com/A4GpFdP.png)
