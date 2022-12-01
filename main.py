@@ -18,21 +18,27 @@ url = f"https://api.coingecko.com/api/v3/coins/{id}"
 
 @bot.event
 async def on_ready():
-    change_status.start()
     print("BOT RUNNING")
+    change_status.start()
+    
 
 @tasks.loop(seconds=updatefreq)
 async def change_status():
-    data = requests.get(url).json()
-    price = str(data['market_data']['current_price']['usd'])[0:length]
-    change = str(data['market_data']['price_change_percentage_24h'])
-    if change[0] != '-':
-        change = f'+{change}'
-    change = change[0:6]
-    for guild in bot.guilds:
-        await guild.me.edit(nick=price)
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, 
-    name=f"24h: {change}%"))
-    print(f"updated {id} with price {price} and 24h percentage change {change}")
+    try:
+        data = requests.get(url).json()
+        price = str(data['market_data']['current_price']['usd'])[0:length]
+        change = str(data['market_data']['price_change_percentage_24h'])
+        if change[0] != '-':
+            change = f'+{change}'
+        change = change[0:6]
+        for guild in bot.guilds:
+            await guild.me.edit(nick=price)
+        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, 
+        name=f"24h: {change}%"))
+        print(f"Updated {id} with price: {price} \n24h percentage change: {change}")
+
+    except requests.exceptions.RequestException:
+        print("Connection Error, passing")
+        pass
     
 bot.run(api)
