@@ -8,6 +8,7 @@ with open('info.json', 'r') as u:
     info = json.load(u)
     api = info['api']
     id = info['id']
+    vscurrency = info['vscurrency']
     length = info['length']
     updatefreq = info['updatefreq']
     print('info loaded')
@@ -26,7 +27,7 @@ async def on_ready():
 async def change_status():
     try:
         data = requests.get(url).json()
-        price = str(data['market_data']['current_price']['usd'])[0:length]
+        price = str(data['market_data']['current_price'][vscurrency])[0:length]
         change = str(data['market_data']['price_change_percentage_24h'])
         if change[0] != '-':
             change = f'+{change}'

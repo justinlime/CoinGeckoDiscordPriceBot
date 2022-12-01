@@ -16,6 +16,7 @@ Use `pip install -r requirements.txt` to install needed packages
 {   
     "api":"[DISCORD-API-KEY]",
     "id":"[ID-OF-COIN]",
+    "vscurrency":"[COMPARISON-CURRENCY]"
     "length":[MAX-CHARACTERS-OF-PRICE],
     "updatefreq":[UPDATE-FREQUENCY-IN-SECONDS] 
 }
